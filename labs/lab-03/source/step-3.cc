@@ -28,6 +28,7 @@
 
 #include <deal.II/grid/grid_generator.h>
 
+#include <deal.II/lac/affine_constraints.h>
 #include <deal.II/lac/full_matrix.h>
 #include <deal.II/lac/precondition.h>
 #include <deal.II/lac/solver_cg.h>
@@ -52,12 +53,12 @@ Step3::Step3()
 void
 Step3::make_grid()
 {
-  GridGenerator::hyper_cube(triangulation, -1, 1);
+  GridGenerator::hyper_cube(triangulation, -1, 1, true);
+  // triangulation.begin_active()->face(0)->set_boundary_id(1);
   triangulation.refine_global(5);
   std::cout << "Number of active cells: " << triangulation.n_active_cells()
             << std::endl;
 }
-
 
 
 void
@@ -115,10 +116,12 @@ Step3::assemble_system()
         system_rhs(local_dof_indices[i]) += cell_rhs(i);
     }
   std::map<types::global_dof_index, double> boundary_values;
+
   VectorTools::interpolate_boundary_values(dof_handler,
-                                           0,
-                                           Functions::ZeroFunction<2>(),
+                                           1,
+                                           ConstantFunction<2>(-0.5),
                                            boundary_values);
+
   MatrixTools::apply_boundary_values(boundary_values,
                                      system_matrix,
                                      solution,

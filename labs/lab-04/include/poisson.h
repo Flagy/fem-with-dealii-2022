@@ -23,6 +23,7 @@
 #define poisson_include_file
 
 #include <deal.II/base/function.h>
+#include <deal.II/base/parameter_acceptor.h>
 #include <deal.II/base/quadrature_lib.h>
 
 #include <deal.II/dofs/dof_handler.h>
@@ -52,7 +53,9 @@
 class PoissonTester;
 
 using namespace dealii;
-class Poisson
+
+template <int dim>
+class Poisson : ParameterAcceptor
 {
 public:
   Poisson();
@@ -71,9 +74,9 @@ protected:
   void
   output_results() const;
 
-  Triangulation<2>     triangulation;
-  FE_Q<2>              fe;
-  DoFHandler<2>        dof_handler;
+  Triangulation<dim>   triangulation;
+  FE_Q<dim>            fe;
+  DoFHandler<dim>      dof_handler;
   SparsityPattern      sparsity_pattern;
   SparseMatrix<double> system_matrix;
   Vector<double>       solution;

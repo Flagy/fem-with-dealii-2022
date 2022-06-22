@@ -17,4 +17,6 @@ public:
 TEST_F(Step3Tester, MakeGrid)
 {
   make_grid();
+  setup_system();
+  assemble_system();
 }

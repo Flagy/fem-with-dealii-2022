@@ -7,7 +7,7 @@
 using namespace dealii;
 
 // Test Fixture for Poisson problem
-class PoissonTester : public ::testing::Test, public Poisson
+class PoissonTester : public ::testing::Test, public Poisson<dim>
 {
 public:
   PoissonTester() = default;
