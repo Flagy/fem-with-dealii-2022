@@ -25,8 +25,10 @@
 
 #include <deal.II/fe/fe_q.h>
 
+#include <deal.II/grid/grid_generator.h>
 #include <deal.II/grid/tria.h>
 
+#include <deal.II/lac/affine_constraints.h>
 #include <deal.II/lac/dynamic_sparsity_pattern.h>
 #include <deal.II/lac/sparse_matrix.h>
 // Forward declare the tester class
@@ -52,13 +54,15 @@ protected:
   void
   output_results() const;
 
-  Triangulation<2>     triangulation;
-  FE_Q<2>              fe;
-  DoFHandler<2>        dof_handler;
-  SparsityPattern      sparsity_pattern;
-  SparseMatrix<double> system_matrix;
-  Vector<double>       solution;
-  Vector<double>       system_rhs;
+  Triangulation<2>          triangulation;
+  FE_Q<2>                   fe;
+  DoFHandler<2>             dof_handler;
+  SparsityPattern           sparsity_pattern;
+  SparseMatrix<double>      system_matrix;
+  Vector<double>            solution;
+  Vector<double>            system_rhs;
+  AffineConstraints<double> constraints;
+
 
   friend class Step3Tester;
 };

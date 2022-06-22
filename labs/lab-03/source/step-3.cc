@@ -27,8 +27,8 @@
 #include <deal.II/fe/fe_values.h>
 
 #include <deal.II/grid/grid_generator.h>
+#include <deal.II/grid/grid_out.h>
 
-#include <deal.II/lac/affine_constraints.h>
 #include <deal.II/lac/full_matrix.h>
 #include <deal.II/lac/precondition.h>
 #include <deal.II/lac/solver_cg.h>
@@ -53,11 +53,28 @@ Step3::Step3()
 void
 Step3::make_grid()
 {
-  GridGenerator::hyper_cube(triangulation, -1, 1, true);
+  GridGenerator::hyper_cube(triangulation, -1, 1);
   // triangulation.begin_active()->face(0)->set_boundary_id(1);
-  triangulation.refine_global(5);
   std::cout << "Number of active cells: " << triangulation.n_active_cells()
             << std::endl;
+  const Point<2> center(0.0, 0.0);
+
+  for (unsigned int step = 0; step < 6; ++step)
+    {
+      for (auto &cell : triangulation.active_cell_iterators())
+        {
+          if (std::fabs(center.distance(cell->center())) < 0.8)
+            {
+              cell->set_refine_flag();
+            }
+        }
+      triangulation.execute_coarsening_and_refinement();
+      std::ofstream out("grid-2-" + std::to_string(step) + ".vtk");
+      GridOut       grid_out;
+      grid_out.write_vtk(triangulation, out);
+      std::cout << "Grid written to grid-3-" + std::to_string(step) + ".vtk"
+                << std::endl;
+    }
 }
 
 
@@ -67,8 +84,19 @@ Step3::setup_system()
   dof_handler.distribute_dofs(fe);
   std::cout << "Number of degrees of freedom: " << dof_handler.n_dofs()
             << std::endl;
+
+  constraints.clear();
+  DoFTools::make_hanging_node_constraints(dof_handler, constraints);
+
+  VectorTools::interpolate_boundary_values(dof_handler,
+                                           0,
+                                           Functions::ZeroFunction<2>(),
+                                           constraints);
+
+  constraints.close();
+
   DynamicSparsityPattern dsp(dof_handler.n_dofs());
-  DoFTools::make_sparsity_pattern(dof_handler, dsp);
+  DoFTools::make_sparsity_pattern(dof_handler, dsp, constraints);
   sparsity_pattern.copy_from(dsp);
   system_matrix.reinit(sparsity_pattern);
   solution.reinit(dof_handler.n_dofs());
@@ -114,18 +142,23 @@ Step3::assemble_system()
                             cell_matrix(i, j));
       for (const unsigned int i : fe_values.dof_indices())
         system_rhs(local_dof_indices[i]) += cell_rhs(i);
+      cell->get_dof_indices(local_dof_indices);
+      constraints.distribute_local_to_global(
+        cell_matrix, cell_rhs, local_dof_indices, system_matrix, system_rhs);
     }
-  std::map<types::global_dof_index, double> boundary_values;
 
-  VectorTools::interpolate_boundary_values(dof_handler,
-                                           1,
-                                           ConstantFunction<2>(-0.5),
-                                           boundary_values);
 
-  MatrixTools::apply_boundary_values(boundary_values,
-                                     system_matrix,
-                                     solution,
-                                     system_rhs);
+
+  // std::map<types::global_dof_index, double> boundary_values;
+  // VectorTools::interpolate_boundary_values(dof_handler,
+  //                                          1,
+  //                                          ConstantFunction<2>(-0.5),
+  //                                          boundary_values);
+
+  // MatrixTools::apply_boundary_values(boundary_values,
+  //                                    system_matrix,
+  //                                    solution,
+  //                                    system_rhs);
 }
 
 
@@ -136,6 +169,7 @@ Step3::solve()
   SolverControl            solver_control(1000, 1e-12);
   SolverCG<Vector<double>> solver(solver_control);
   solver.solve(system_matrix, solution, system_rhs, PreconditionIdentity());
+  constraints.distribute(solution);
 }
 
 
