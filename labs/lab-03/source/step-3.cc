@@ -90,7 +90,7 @@ Step3::setup_system()
 
   VectorTools::interpolate_boundary_values(dof_handler,
                                            0,
-                                           Functions::ZeroFunction<2>(),
+                                           Functions::ConstantFunction<2>(-0.5),
                                            constraints);
 
   constraints.close();
@@ -131,7 +131,7 @@ Step3::assemble_system()
                  fe_values.JxW(q_index));           // dx
           for (const unsigned int i : fe_values.dof_indices())
             cell_rhs(i) += (fe_values.shape_value(i, q_index) * // phi_i(x_q)
-                            1. *                                // f(x_q)
+                            1.5 *                               // f(x_q)
                             fe_values.JxW(q_index));            // dx
         }
       cell->get_dof_indices(local_dof_indices);
