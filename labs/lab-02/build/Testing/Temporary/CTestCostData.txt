@@ -1,0 +1,7 @@
+Step1.Mark1 2 0.62522
+Step1.Mark2 1 0.695355
+Step1.Mark3 1 0.556203
+Step1.Mark4 1 0.561101
+Step1.Mark5 1 0.693534
+Step1.Mark6 1 0.559885
+---

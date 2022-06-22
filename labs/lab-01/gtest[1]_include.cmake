@@ -1,0 +1,5 @@
+if(EXISTS "/workspaces/fem-with-dealii-2022/labs/lab-01/gtest[1]_tests.cmake")
+  include("/workspaces/fem-with-dealii-2022/labs/lab-01/gtest[1]_tests.cmake")
+else()
+  add_test(gtest_NOT_BUILT gtest_NOT_BUILT)
+endif()

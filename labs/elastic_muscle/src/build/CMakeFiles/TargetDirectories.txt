@@ -1,0 +1,10 @@
+/workspaces/fem-with-dealii-2022/labs/elastic_muscle/src/build/CMakeFiles/rebuild_cache.dir
+/workspaces/fem-with-dealii-2022/labs/elastic_muscle/src/build/CMakeFiles/info.dir
+/workspaces/fem-with-dealii-2022/labs/elastic_muscle/src/build/CMakeFiles/distclean.dir
+/workspaces/fem-with-dealii-2022/labs/elastic_muscle/src/build/CMakeFiles/runclean.dir
+/workspaces/fem-with-dealii-2022/labs/elastic_muscle/src/build/CMakeFiles/release.dir
+/workspaces/fem-with-dealii-2022/labs/elastic_muscle/src/build/CMakeFiles/debug.dir
+/workspaces/fem-with-dealii-2022/labs/elastic_muscle/src/build/CMakeFiles/run.dir
+/workspaces/fem-with-dealii-2022/labs/elastic_muscle/src/build/CMakeFiles/edit_cache.dir
+/workspaces/fem-with-dealii-2022/labs/elastic_muscle/src/build/CMakeFiles/strip_comments.dir
+/workspaces/fem-with-dealii-2022/labs/elastic_muscle/src/build/CMakeFiles/muscle.dir

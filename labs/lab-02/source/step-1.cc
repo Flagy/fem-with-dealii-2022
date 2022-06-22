@@ -93,6 +93,10 @@ second_grid(Triangulation<2> &triangulation)
 
       triangulation.execute_coarsening_and_refinement();
     }
+  GridOut       grid_out;
+  std::ofstream out("grid-2.svg");
+  grid_out.write_svg(triangulation, out);
+  std::cout << "Grid written to grid-3.svg" << std::endl;
 }
 
 //! Create an L-shaped domain with one global refinement, and write it on
@@ -101,18 +105,54 @@ second_grid(Triangulation<2> &triangulation)
 // twist: refine all cells with the distance between the center of the cell and
 // re-entrant corner is smaller than 1/3.
 void
-third_grid(Triangulation<2> &)
+third_grid(Triangulation<2> &triangulation)
 {
-  // Insert code here
+  const Point<2> center;
+  GridGenerator::hyper_L(triangulation);
+  triangulation.refine_global(1);
+  for (unsigned int step = 0; step < 3; ++step)
+    {
+      for (auto &cell : triangulation.active_cell_iterators())
+        {
+          if (cell->center().distance(center) < 2.0 / 3.)
+            cell->set_refine_flag();
+        }
+      triangulation.execute_coarsening_and_refinement();
+    }
+
+  {
+    std::ofstream out("grid-3.vtk");
+    GridOut       grid_out;
+    grid_out.write_vtk(triangulation, out);
+    std::cout << "Grid written to grid-3.vtk" << std::endl;
+  }
+  {
+    std::ofstream out("grid-3.svg");
+    GridOut       grid_out;
+    grid_out.write_svg(triangulation, out);
+    std::cout << "Grid written to grid-3.svg" << std::endl;
+  }
 }
 
 //! Returns a tuple with number of levels, number of cells, number of active
 // cells. Test this with all of  your meshes.
 std::tuple<unsigned int, unsigned int, unsigned int>
-get_info(const Triangulation<2> &)
+get_info(const Triangulation<2> &triangulation)
 {
   // Insert code here
-  return std::make_tuple(0, 0, 0);
+  auto number_of_levels       = triangulation.n_levels();
+  auto number_of_cells        = triangulation.n_cells();
+  auto number_of_active_cells = triangulation.n_active_cells();
+  std::cout << "number_of_levels: " + std::to_string(number_of_levels)
+            << std::endl;
+  std::cout << "number_of_cells: " + std::to_string(number_of_cells)
+            << std::endl;
+  std::cout << "number_of_active_cells: " +
+                 std::to_string(number_of_active_cells)
+            << std::endl;
+  return std::make_tuple(number_of_levels,
+                         number_of_cells,
+                         number_of_active_cells);
 }
 
 int
@@ -126,4 +166,9 @@ main()
     Triangulation<2> triangulation;
     second_grid(triangulation);
   }
+  {
+    Triangulation<2> triangulation;
+    third_grid(triangulation);
+    auto info = get_info(triangulation);
+  };
 }

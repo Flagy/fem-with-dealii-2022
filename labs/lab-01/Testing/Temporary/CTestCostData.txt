@@ -1,0 +1,4 @@
+Pythagoras.Norm 1 0.874477
+Pythagoras.Distance 1 0.310981
+Pythagoras.ScalarProduct 1 0.312799
+---

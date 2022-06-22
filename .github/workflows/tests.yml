@@ -77,5 +77,33 @@ jobs:
     - name: Run gtest on lab 03 
       run: |
          cd labs/lab-03/build_linux_debug
+<<<<<<< HEAD
 >>>>>>> e8fb5df2567d569c1ce07a051b585a418461a7a8
          ./gtest
+=======
+         ./gtest
+
+    - name: Build lab 04
+      run: |
+         cd labs/lab-04
+         rm -rf build_linux_debug
+         mkdir build_linux_debug 
+         cd build_linux_debug
+         cmake .. -GNinja -DCMAKE_BUILD_TYPE=Debug; ninja
+    - name: Run gtest on lab 04 
+      run: |
+         cd labs/lab-04/build_linux_debug
+         ./gtest
+
+    - name: Build lab 05
+      run: |
+         cd labs/lab-05
+         rm -rf build_linux_debug
+         mkdir build_linux_debug 
+         cd build_linux_debug
+         cmake .. -GNinja -DCMAKE_BUILD_TYPE=Debug; ninja
+    - name: Run ctest on lab 05 
+      run: |
+         cd labs/lab-05/build_linux_debug
+         ctest
+>>>>>>> 675eb47eb66e8f57972aa282e943295ab82bddfa

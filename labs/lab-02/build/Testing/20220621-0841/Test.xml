@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Site BuildName="(empty)"
+	BuildStamp="20220621-0841-Experimental"
+	Name="(empty)"
+	Generator="ctest-3.16.3"
+	CompilerName=""
+	CompilerVersion=""
+	OSName="Linux"
+	Hostname="2bdd813a2769"
+	OSRelease="5.10.16.3-microsoft-standard-WSL2"
+	OSVersion="#1 SMP Fri Apr 2 22:23:49 UTC 2021"
+	OSPlatform="x86_64"
+	Is64Bits="1"
+	VendorString="GenuineIntel"
+	VendorID="Intel Corporation"
+	FamilyID="6"
+	ModelID="140"
+	ProcessorCacheSize="12288"
+	NumberOfLogicalCPU="8"
+	NumberOfPhysicalCPU="4"
+	TotalVirtualMemory="4096"
+	TotalPhysicalMemory="15862"
+	LogicalProcessorsPerPhysical="2"
+	ProcessorClockFrequency="2995.2"
+	>
+	<Testing>
+		<StartDateTime>Jun 21 12:39 UTC</StartDateTime>
+		<StartTestTime>1655815194</StartTestTime>
+		<TestList>
+			<Test>./Step1.Mark1</Test>
+			<Test>./Step1.Mark3</Test>
+			<Test>./Step1.Mark4</Test>
+			<Test>./Step1.Mark6</Test>
+			<Test>./Step1.Mark2</Test>
+			<Test>./Step1.Mark5</Test>
+		</TestList>
+		<Test Status="passed">
+			<Name>Step1.Mark1</Name>
+			<Path>.</Path>
+			<FullName>./Step1.Mark1</FullName>
+			<FullCommandLine>/workspaces/fem-with-dealii-2022/labs/lab-02/build/gtest "--gtest_filter=Step1.Mark1" "--gtest_also_run_disabled_tests"</FullCommandLine>
+			<Results>
+				<NamedMeasurement type="numeric/double" name="Execution Time">
+					<Value>0.549213</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="numeric/double" name="Processors">
+					<Value>1</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Completion Status">
+					<Value>Completed</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Command Line">
+					<Value>/workspaces/fem-with-dealii-2022/labs/lab-02/build/gtest "--gtest_filter=Step1.Mark1" "--gtest_also_run_disabled_tests"</Value>
+				</NamedMeasurement>
+				<Measurement>
+					<Value encoding="base64" compression="gzip">eJyNkcFqwzAMhu9+Ch3XQwIZgW2FHgYbOYxlo9lOIQe3VYxpIhdZSV9/TrKWplC2/2Rbv6VPUu4El5A5ZxqEL/QCtW0EGVZQCB6S+F3zPlHl6qwK1h2RJQMJyPiBXXs6+84KxqqMzqoga9xGN1McqbfsqEUKXpSoO1yZL3OOAKqE9XcOo6oZU961mwDqanBsjaVQo0cWu0W/hPQifHoFXQ+dpcBYW8IBIjjvH59UxnYHR7YiSCAOTLhHSex7cyvUyz6QTfp4m5PB3UMKrV/80dmvLSQV3SzU/4YmqDnauSPNV3JrFcCa4qtCAfvzuSheX4aBTuZY/QDst6Cm====</Value>
+				</Measurement>
+			</Results>
+		</Test>
+		<Test Status="passed">
+			<Name>Step1.Mark3</Name>
+			<Path>.</Path>
+			<FullName>./Step1.Mark3</FullName>
+			<FullCommandLine>/workspaces/fem-with-dealii-2022/labs/lab-02/build/gtest "--gtest_filter=Step1.Mark3" "--gtest_also_run_disabled_tests"</FullCommandLine>
+			<Results>
+				<NamedMeasurement type="numeric/double" name="Execution Time">
+					<Value>0.556203</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="numeric/double" name="Processors">
+					<Value>1</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Completion Status">
+					<Value>Completed</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Command Line">
+					<Value>/workspaces/fem-with-dealii-2022/labs/lab-02/build/gtest "--gtest_filter=Step1.Mark3" "--gtest_also_run_disabled_tests"</Value>
+				</NamedMeasurement>
+				<Measurement>
+					<Value encoding="base64" compression="gzip">eJyNUMFqwkAQve9XvKMesiBe2oIHQclBaotpTyGHFcewuJmVzST+freJihFE32mGefPmzVt7oQ+k3peO8EO1YG+dUMAMmdBxoj9NOExVPruiwKZhtlxiAukWgq8udd1YIa3y5IoCqfNb4/o5cWuD54o4ckmS5nhHvtXsDKgcm981OhQDT2mwO5yCFSGGeJSxT6a6lcOjUd2WUa7H12ooh9HbO6p6/MTOmRZFxbixeu1TIROSnT/xMMdH+SEY1neHou3veZYtF/8p9GSt/gDyaoai====</Value>
+				</Measurement>
+			</Results>
+		</Test>
+		<Test Status="passed">
+			<Name>Step1.Mark4</Name>
+			<Path>.</Path>
+			<FullName>./Step1.Mark4</FullName>
+			<FullCommandLine>/workspaces/fem-with-dealii-2022/labs/lab-02/build/gtest "--gtest_filter=Step1.Mark4" "--gtest_also_run_disabled_tests"</FullCommandLine>
+			<Results>
+				<NamedMeasurement type="numeric/double" name="Execution Time">
+					<Value>0.561101</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="numeric/double" name="Processors">
+					<Value>1</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Completion Status">
+					<Value>Completed</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Command Line">
+					<Value>/workspaces/fem-with-dealii-2022/labs/lab-02/build/gtest "--gtest_filter=Step1.Mark4" "--gtest_also_run_disabled_tests"</Value>
+				</NamedMeasurement>
+				<Measurement>
+					<Value encoding="base64" compression="gzip">eJyNUctugzAQvPsr9tgcQCIhfUTKoVIrDlVpFdoTQpFDFmTFrCOzkN+vISWCSFE7J3tmvDvrjQ3jCiJjSo3whTVDoTSjhTUkjMfAf5f2EIp0fUEGm4ZIUQkBcP/Ammo4141i9EXqXZBBpM1O6rOO1CprqEJyXmSvOV6ZxzX7ACKFzXcMPbJJpripdi6oKcBYVSpyPVq0rHKsVzCWBxZk0U0WgsVCEXYhnHP++CQiq/ZwsooZCdhA6e5e4NdteUtq+SCo77A1xVZji9rVWo64HHVHLcJgRMqcVYuDNl/eu/HO+Hibjgd3Dwuo6tkf3/Nrc8lY6pn4388zSuvtzYmme721T7CS/KtGLvbnc5K8vnRbOZt98QNu1bki====</Value>
+				</Measurement>
+			</Results>
+		</Test>
+		<Test Status="passed">
+			<Name>Step1.Mark6</Name>
+			<Path>.</Path>
+			<FullName>./Step1.Mark6</FullName>
+			<FullCommandLine>/workspaces/fem-with-dealii-2022/labs/lab-02/build/gtest "--gtest_filter=Step1.Mark6" "--gtest_also_run_disabled_tests"</FullCommandLine>
+			<Results>
+				<NamedMeasurement type="numeric/double" name="Execution Time">
+					<Value>0.559885</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="numeric/double" name="Processors">
+					<Value>1</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Completion Status">
+					<Value>Completed</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Command Line">
+					<Value>/workspaces/fem-with-dealii-2022/labs/lab-02/build/gtest "--gtest_filter=Step1.Mark6" "--gtest_also_run_disabled_tests"</Value>
+				</NamedMeasurement>
+				<Measurement>
+					<Value encoding="base64" compression="gzip">eJyNUcFOwzAMvecrfGSHRipjAybtgATqATHQCqeqmrLNq6KlzpS42e+TtWxqkSZ4p+S9F/vFXljGGWTWVgbhEz3DThtGB3PIGQ+pfFNuPxXF/IISlg2RpgpS4PaBs/X57BvNKEWRXFBCZuxamU5HCtpZqpGiFzlpDr/M/ZptAFHA8msBLcpBpszpLRydZkYCtlDFezKWgffXJB8qQU29Rreyu5XBgMbPYNLjNmhO1HiS9ki1YR3wrN1O72KmDu+vw0xwc/8AtR/98acfW0zGyozE/8bFqFyytUcaLuPaEsApkrHRY69RjP3xlOcvz6dRdmYpvgFoxZ8c====</Value>
+				</Measurement>
+			</Results>
+		</Test>
+		<Test Status="passed">
+			<Name>Step1.Mark2</Name>
+			<Path>.</Path>
+			<FullName>./Step1.Mark2</FullName>
+			<FullCommandLine>/workspaces/fem-with-dealii-2022/labs/lab-02/build/gtest "--gtest_filter=Step1.Mark2" "--gtest_also_run_disabled_tests"</FullCommandLine>
+			<Results>
+				<NamedMeasurement type="numeric/double" name="Execution Time">
+					<Value>0.695355</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="numeric/double" name="Processors">
+					<Value>1</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Completion Status">
+					<Value>Completed</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Command Line">
+					<Value>/workspaces/fem-with-dealii-2022/labs/lab-02/build/gtest "--gtest_filter=Step1.Mark2" "--gtest_also_run_disabled_tests"</Value>
+				</NamedMeasurement>
+				<Measurement>
+					<Value encoding="base64" compression="gzip">eJyNUMuKwkAQvM9X1HE9ZEDFi+BB2CUH8YFxTyGHWWzD4KRHJh39fccEZSOI1qmbruqq7pUXmiL1vnSEHdWCg3VCATNkQqehXppwHKl89kCBbcNsucQQ0gqCr+513VghrfLkgQKp83/GdXPisw2eK+LIJUma0xP5/842gMqx/V2hRdHLlAa7xyVYEWKIRxn7ZKzrcxk1HdaLvgZfo/EEVT14Y3rnxbVi3EB9dpCQCcneX7j/rldvQjCsn51i8s08y36+b9d2bK2uLJx9sQ==</Value>
+				</Measurement>
+			</Results>
+		</Test>
+		<Test Status="passed">
+			<Name>Step1.Mark5</Name>
+			<Path>.</Path>
+			<FullName>./Step1.Mark5</FullName>
+			<FullCommandLine>/workspaces/fem-with-dealii-2022/labs/lab-02/build/gtest "--gtest_filter=Step1.Mark5" "--gtest_also_run_disabled_tests"</FullCommandLine>
+			<Results>
+				<NamedMeasurement type="numeric/double" name="Execution Time">
+					<Value>0.693534</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="numeric/double" name="Processors">
+					<Value>1</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Completion Status">
+					<Value>Completed</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Command Line">
+					<Value>/workspaces/fem-with-dealii-2022/labs/lab-02/build/gtest "--gtest_filter=Step1.Mark5" "--gtest_also_run_disabled_tests"</Value>
+				</NamedMeasurement>
+				<Measurement>
+					<Value encoding="base64" compression="gzip">eJyNUEFqwzAQvOsVe2wOFrFbFxrIodDiQ2la4vZkTFCSjRGVV0FaO9+vYuNgB0o6J+3srGaYlWVcQGZtZRC+0DMctGF0sISc8RjLd+V+UlEsLyhh3RBpqiAG7g6crYe3bzSjFEV0QQmZsVtl+j1Sq52lGilokaPmeCUe/9kFEAWsv1fQoZxkypzew8lpZiRgC1WYo3vp20pQU2/RbexhY7BF4xfwOOJ2aM5UnKTzEat2rFsclk8P8+Dc4+Nt6gx3SZJC7Wc3og+6EI6VmYn/1cKoXLS3J5qW/lfZ4BTJa6eQ/PM5z19fzp31ail+AeEull4=</Value>
+				</Measurement>
+			</Results>
+		</Test>
+		<EndDateTime>Jun 21 12:39 UTC</EndDateTime>
+		<EndTestTime>1655815195</EndTestTime>
+		<ElapsedMinutes>0</ElapsedMinutes>
+	</Testing>
+</Site>

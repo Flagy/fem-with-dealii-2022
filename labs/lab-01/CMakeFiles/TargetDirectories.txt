@@ -1,0 +1,4 @@
+/workspaces/fem-with-dealii-2022/labs/lab-01/CMakeFiles/rebuild_cache.dir
+/workspaces/fem-with-dealii-2022/labs/lab-01/CMakeFiles/edit_cache.dir
+/workspaces/fem-with-dealii-2022/labs/lab-01/CMakeFiles/test.dir
+/workspaces/fem-with-dealii-2022/labs/lab-01/CMakeFiles/gtest.dir

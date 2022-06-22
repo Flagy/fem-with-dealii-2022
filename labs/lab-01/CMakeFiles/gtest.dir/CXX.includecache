@@ -1,0 +1,14 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/workspaces/fem-with-dealii-2022/labs/lab-01/pythagoras.cc
+deal.II/base/point.h
+-
+gtest/gtest.h
+-
+

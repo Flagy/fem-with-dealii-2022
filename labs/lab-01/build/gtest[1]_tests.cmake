@@ -1,0 +1,7 @@
+add_test( Pythagoras.Norm /workspaces/fem-with-dealii-2022/labs/lab-01/build/gtest [==[--gtest_filter=Pythagoras.Norm]==] --gtest_also_run_disabled_tests)
+set_tests_properties( Pythagoras.Norm PROPERTIES WORKING_DIRECTORY /workspaces/fem-with-dealii-2022/labs/lab-01/build)
+add_test( Pythagoras.Distance /workspaces/fem-with-dealii-2022/labs/lab-01/build/gtest [==[--gtest_filter=Pythagoras.Distance]==] --gtest_also_run_disabled_tests)
+set_tests_properties( Pythagoras.Distance PROPERTIES WORKING_DIRECTORY /workspaces/fem-with-dealii-2022/labs/lab-01/build)
+add_test( Pythagoras.ScalarProduct /workspaces/fem-with-dealii-2022/labs/lab-01/build/gtest [==[--gtest_filter=Pythagoras.ScalarProduct]==] --gtest_also_run_disabled_tests)
+set_tests_properties( Pythagoras.ScalarProduct PROPERTIES WORKING_DIRECTORY /workspaces/fem-with-dealii-2022/labs/lab-01/build)
+set( gtest_TESTS Pythagoras.Norm Pythagoras.Distance Pythagoras.ScalarProduct)

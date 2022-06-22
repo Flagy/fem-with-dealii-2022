@@ -36,7 +36,7 @@
 
 using namespace dealii;
 
-
+const unsigned int fe_order = 1;
 void
 make_grid(Triangulation<2> &triangulation)
 {
@@ -44,7 +44,7 @@ make_grid(Triangulation<2> &triangulation)
   const double   inner_radius = 0.5, outer_radius = 1.0;
   GridGenerator::hyper_shell(
     triangulation, center, inner_radius, outer_radius, 5);
-
+  triangulation.refine_global(3);
   static const SphericalManifold<2> manifold_description(center);
   triangulation.set_all_manifold_ids(0);
   triangulation.set_manifold(0, manifold_description);
@@ -76,7 +76,7 @@ make_grid(Triangulation<2> &triangulation)
 void
 distribute_dofs(DoFHandler<2> &dof_handler)
 {
-  static const FE_Q<2> finite_element(1);
+  static const FE_Q<2> finite_element(fe_order);
   dof_handler.distribute_dofs(finite_element);
 
   DynamicSparsityPattern dynamic_sparsity_pattern(dof_handler.n_dofs(),
@@ -87,7 +87,8 @@ distribute_dofs(DoFHandler<2> &dof_handler)
   SparsityPattern sparsity_pattern;
   sparsity_pattern.copy_from(dynamic_sparsity_pattern);
 
-  std::ofstream out("sparsity_pattern1.svg");
+  std::ofstream out("sparsity_pattern1_fe_" + std::to_string(fe_order) +
+                    ".svg");
   sparsity_pattern.print_svg(out);
 }
 
@@ -105,7 +106,8 @@ renumber_dofs(DoFHandler<2> &dof_handler)
   SparsityPattern sparsity_pattern;
   sparsity_pattern.copy_from(dynamic_sparsity_pattern);
 
-  std::ofstream out("sparsity_pattern2.svg");
+  std::ofstream out("sparsity_pattern2_fe_" + std::to_string(fe_order) +
+                    ".svg");
   sparsity_pattern.print_svg(out);
 }
 

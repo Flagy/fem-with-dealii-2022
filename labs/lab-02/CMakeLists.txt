@@ -13,6 +13,9 @@ DEAL_II_SETUP_TARGET(step-1)
 ADD_EXECUTABLE(step-2 source/step-2.cc)
 DEAL_II_SETUP_TARGET(step-2)
 
+ADD_EXECUTABLE(plot-dofs source/plot-dofs.cc)
+DEAL_II_SETUP_TARGET(plot-dofs)
+
 ADD_LIBRARY(step-1-lib SHARED $<TARGET_OBJECTS:step-1>)
 DEAL_II_SETUP_TARGET(step-1-lib)
 

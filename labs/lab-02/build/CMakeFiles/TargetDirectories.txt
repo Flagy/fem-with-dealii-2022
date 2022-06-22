@@ -1,0 +1,9 @@
+/workspaces/fem-with-dealii-2022/labs/lab-02/build/CMakeFiles/edit_cache.dir
+/workspaces/fem-with-dealii-2022/labs/lab-02/build/CMakeFiles/test.dir
+/workspaces/fem-with-dealii-2022/labs/lab-02/build/CMakeFiles/gtest.dir
+/workspaces/fem-with-dealii-2022/labs/lab-02/build/CMakeFiles/step-2-lib.dir
+/workspaces/fem-with-dealii-2022/labs/lab-02/build/CMakeFiles/plot-dofs.dir
+/workspaces/fem-with-dealii-2022/labs/lab-02/build/CMakeFiles/step-1-lib.dir
+/workspaces/fem-with-dealii-2022/labs/lab-02/build/CMakeFiles/step-2.dir
+/workspaces/fem-with-dealii-2022/labs/lab-02/build/CMakeFiles/rebuild_cache.dir
+/workspaces/fem-with-dealii-2022/labs/lab-02/build/CMakeFiles/step-1.dir

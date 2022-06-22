@@ -1,0 +1,1023 @@
+{
+	"artifacts" : 
+	[
+		{
+			"path" : "muscle"
+		}
+	],
+	"backtrace" : 2,
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"ADD_EXECUTABLE",
+			"DEAL_II_INVOKE_AUTOPILOT",
+			"TARGET_LINK_LIBRARIES",
+			"DEAL_II_SETUP_TARGET",
+			"TARGET_COMPILE_OPTIONS",
+			"TARGET_COMPILE_DEFINITIONS",
+			"TARGET_INCLUDE_DIRECTORIES"
+		],
+		"files" : 
+		[
+			"/usr/local/share/deal.II/macros/macro_deal_ii_invoke_autopilot.cmake",
+			"CMakeLists.txt",
+			"/usr/local/share/deal.II/macros/macro_deal_ii_setup_target.cmake"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 1
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 39,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 56,
+				"parent" : 1
+			},
+			{
+				"command" : 3,
+				"file" : 0,
+				"line" : 57,
+				"parent" : 1
+			},
+			{
+				"command" : 2,
+				"file" : 2,
+				"line" : 169,
+				"parent" : 3
+			},
+			{
+				"command" : 4,
+				"file" : 2,
+				"line" : 129,
+				"parent" : 3
+			},
+			{
+				"command" : 5,
+				"file" : 2,
+				"line" : 133,
+				"parent" : 3
+			},
+			{
+				"command" : 6,
+				"file" : 2,
+				"line" : 110,
+				"parent" : 3
+			}
+		]
+	},
+	"compileGroups" : 
+	[
+		{
+			"compileCommandFragments" : 
+			[
+				{
+					"fragment" : " "
+				},
+				{
+					"backtrace" : 5,
+					"fragment" : "-pedantic"
+				},
+				{
+					"backtrace" : 5,
+					"fragment" : "-fPIC"
+				},
+				{
+					"backtrace" : 5,
+					"fragment" : "-Wall"
+				},
+				{
+					"backtrace" : 5,
+					"fragment" : "-Wextra"
+				},
+				{
+					"backtrace" : 5,
+					"fragment" : "-Wmissing-braces"
+				},
+				{
+					"backtrace" : 5,
+					"fragment" : "-Woverloaded-virtual"
+				},
+				{
+					"backtrace" : 5,
+					"fragment" : "-Wpointer-arith"
+				},
+				{
+					"backtrace" : 5,
+					"fragment" : "-Wsign-compare"
+				},
+				{
+					"backtrace" : 5,
+					"fragment" : "-Wswitch"
+				},
+				{
+					"backtrace" : 5,
+					"fragment" : "-Wsynth"
+				},
+				{
+					"backtrace" : 5,
+					"fragment" : "-Wwrite-strings"
+				},
+				{
+					"backtrace" : 5,
+					"fragment" : "-Wno-placement-new"
+				},
+				{
+					"backtrace" : 5,
+					"fragment" : "-Wno-literal-suffix"
+				},
+				{
+					"backtrace" : 5,
+					"fragment" : "-Wno-psabi"
+				},
+				{
+					"backtrace" : 5,
+					"fragment" : "-Wno-class-memaccess"
+				},
+				{
+					"backtrace" : 5,
+					"fragment" : "-fopenmp-simd"
+				},
+				{
+					"backtrace" : 5,
+					"fragment" : "-std=c++17"
+				},
+				{
+					"backtrace" : 5,
+					"fragment" : "-pthread"
+				},
+				{
+					"backtrace" : 5,
+					"fragment" : "-Wno-unused-local-typedefs"
+				},
+				{
+					"backtrace" : 5,
+					"fragment" : "-O0"
+				},
+				{
+					"backtrace" : 5,
+					"fragment" : "-ggdb"
+				},
+				{
+					"backtrace" : 5,
+					"fragment" : "-Wa,--compress-debug-sections"
+				}
+			],
+			"defines" : 
+			[
+				{
+					"backtrace" : 6,
+					"define" : "BOOST_NO_AUTO_PTR"
+				},
+				{
+					"backtrace" : 6,
+					"define" : "DEBUG"
+				}
+			],
+			"includes" : 
+			[
+				{
+					"backtrace" : 7,
+					"isSystem" : true,
+					"path" : "/usr/lib/x86_64-linux-gnu/openmpi/include/openmpi"
+				},
+				{
+					"backtrace" : 7,
+					"isSystem" : true,
+					"path" : "/usr/lib/x86_64-linux-gnu/openmpi/include"
+				},
+				{
+					"backtrace" : 7,
+					"isSystem" : true,
+					"path" : "/usr/include/trilinos"
+				},
+				{
+					"backtrace" : 7,
+					"isSystem" : true,
+					"path" : "/usr/include/hdf5/openmpi"
+				},
+				{
+					"backtrace" : 7,
+					"isSystem" : true,
+					"path" : "/usr/include/scotch"
+				},
+				{
+					"backtrace" : 7,
+					"isSystem" : true,
+					"path" : "/usr/include/suitesparse"
+				},
+				{
+					"backtrace" : 7,
+					"isSystem" : true,
+					"path" : "/usr/include/petsc"
+				},
+				{
+					"backtrace" : 7,
+					"isSystem" : true,
+					"path" : "/usr/include/opencascade"
+				},
+				{
+					"backtrace" : 7,
+					"isSystem" : true,
+					"path" : "/usr/include/slepc"
+				}
+			],
+			"language" : "CXX",
+			"sourceIndexes" : 
+			[
+				0
+			]
+		}
+	],
+	"id" : "muscle::@6890427a1f51a3e7e1df",
+	"link" : 
+	{
+		"commandFragments" : 
+		[
+			{
+				"fragment" : "-rdynamic  -rdynamic -fuse-ld=gold -lpthread -pthread -ggdb",
+				"role" : "flags"
+			},
+			{
+				"fragment" : "-Wl,-rpath,/usr/local/lib:/usr/lib/x86_64-linux-gnu/openmpi/lib:/usr/lib/x86_64-linux-gnu/hdf5/openmpi:/usr/lib/x86_64-linux-gnu/hdf5/openmpi/lib",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 4,
+				"fragment" : "/usr/local/lib/libdeal_II.g.so.9.4.0-pre",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "/usr/lib/x86_64-linux-gnu/openmpi/lib/libopen-pal.so",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "-ltrilinos_pike-blackbox",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "-ltrilinos_trilinoscouplings",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "-ltrilinos_piro",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "-ltrilinos_rol",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "-ltrilinos_stokhos_muelu",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "-ltrilinos_stokhos_ifpack2",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "-ltrilinos_stokhos_amesos2",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "-ltrilinos_stokhos_tpetra",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "-ltrilinos_stokhos_sacado",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "-ltrilinos_stokhos",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "-ltrilinos_rythmos",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "-ltrilinos_shylu_ddcommon",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "-ltrilinos_shylu_ddfrosch",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "-ltrilinos_muelu-adapters",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "-ltrilinos_muelu-interface",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "-ltrilinos_muelu",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "-ltrilinos_moertel",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "-ltrilinos_locathyra",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "-ltrilinos_locaepetra",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "-ltrilinos_localapack",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "-ltrilinos_loca",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "-ltrilinos_noxepetra",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "-ltrilinos_noxlapack",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "-ltrilinos_nox",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "-ltrilinos_phalanx",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "-ltrilinos_intrepid2",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "-ltrilinos_intrepid",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "-ltrilinos_teko",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "-ltrilinos_stratimikos",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "-ltrilinos_stratimikosbelos",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "-ltrilinos_stratimikosamesos2",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "-ltrilinos_stratimikosaztecoo",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "-ltrilinos_stratimikosamesos",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "-ltrilinos_stratimikosml",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "-ltrilinos_stratimikosifpack",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "-ltrilinos_ifpack2-adapters",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "-ltrilinos_ifpack2",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "-ltrilinos_anasazitpetra",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "-ltrilinos_ModeLaplace",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "-ltrilinos_anasaziepetra",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "-ltrilinos_anasazi",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "-ltrilinos_komplex",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "-ltrilinos_amesos2",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "-ltrilinos_shylu_nodetacho",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "-ltrilinos_shylu_nodehts",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "-ltrilinos_belosxpetra",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "-ltrilinos_belostpetra",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "-ltrilinos_belosepetra",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "-ltrilinos_belos",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "-ltrilinos_ml",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "-ltrilinos_ifpack",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "-ltrilinos_zoltan2",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "-ltrilinos_pamgen_extras",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "-ltrilinos_pamgen",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "-ltrilinos_amesos",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "-ltrilinos_galeri-xpetra",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "-ltrilinos_galeri-epetra",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "-ltrilinos_aztecoo",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "-ltrilinos_dpliris",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "-ltrilinos_isorropia",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "-ltrilinos_optipack",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "-ltrilinos_xpetra-sup",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "-ltrilinos_xpetra",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "-ltrilinos_thyratpetra",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "-ltrilinos_thyraepetraext",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "-ltrilinos_thyraepetra",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "-ltrilinos_thyracore",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "-ltrilinos_epetraext",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "-ltrilinos_trilinosss",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "-ltrilinos_tpetraext",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "-ltrilinos_tpetrainout",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "-ltrilinos_tpetra",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "-ltrilinos_kokkostsqr",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "-ltrilinos_tpetraclassiclinalg",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "-ltrilinos_tpetraclassicnodeapi",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "-ltrilinos_tpetraclassic",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "-ltrilinos_triutils",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "-ltrilinos_globipack",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "-ltrilinos_shards",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "-ltrilinos_zoltan",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "-ltrilinos_epetra",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "-ltrilinos_sacado",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "-ltrilinos_rtop",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "-ltrilinos_kokkoskernels",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "-ltrilinos_teuchoskokkoscomm",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "-ltrilinos_teuchoskokkoscompat",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "-ltrilinos_teuchosremainder",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "-ltrilinos_teuchosnumerics",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "-ltrilinos_teuchoscomm",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "-ltrilinos_teuchosparameterlist",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "-ltrilinos_teuchosparser",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "-ltrilinos_teuchoscore",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "-ltrilinos_kokkosalgorithms",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "-ltrilinos_kokkoscontainers",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "-ltrilinos_kokkoscore",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "-lsmumps",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "-ldmumps",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "-lcmumps",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "-lzmumps",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "-lpord",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "-lmumps_common",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "/usr/lib/x86_64-linux-gnu/hdf5/openmpi/libhdf5.so",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "-ltbb",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "-lptscotch",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "-lptscotcherr",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "-lscotch",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "-lscotcherr",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "/usr/lib/x86_64-linux-gnu/openmpi/lib/libmpi_cxx.so",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "-lumfpack",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "-lcholmod",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "-lccolamd",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "-lcolamd",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "-lcamd",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "-lsuitesparseconfig",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "-lamd",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "-lmetis",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "-lrt",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "-ladolc",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "-lboost_iostreams",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "-lboost_serialization",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "-lboost_system",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "-lboost_thread",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "-lboost_regex",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "-lboost_chrono",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "-lboost_date_time",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "-lboost_atomic",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "-lparpack",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "-larpack",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "-lassimp",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "-lgmsh",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "-lgsl",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "-lgslcblas",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "/usr/lib/x86_64-linux-gnu/hdf5/openmpi/lib/libhdf5.so",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "-lsz",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "-lz",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "-ldl",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "-lm",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "-lmuparser",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "-lTKBO",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "-lTKBool",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "-lTKBRep",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "-lTKernel",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "-lTKFeat",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "-lTKFillet",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "-lTKG2d",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "-lTKG3d",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "-lTKGeomAlgo",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "-lTKGeomBase",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "-lTKHLR",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "-lTKIGES",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "-lTKMath",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "-lTKMesh",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "-lTKOffset",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "-lTKPrim",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "-lTKShHealing",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "-lTKSTEP",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "-lTKSTEPAttr",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "-lTKSTEPBase",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "-lTKSTEP209",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "-lTKSTL",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "-lTKTopAlgo",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "-lTKXSBase",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "-lp4est",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "-lsc",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "-lscalapack-openmpi",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "-llapack",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "-lblas",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "/usr/lib/x86_64-linux-gnu/openmpi/lib/libmpi_usempif08.so",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "/usr/lib/x86_64-linux-gnu/openmpi/lib/libmpi_usempi_ignore_tkr.so",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "/usr/lib/x86_64-linux-gnu/openmpi/lib/libmpi_mpifh.so",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "/usr/lib/x86_64-linux-gnu/openmpi/lib/libmpi.so",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "-lslepc",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "-lpetsc",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "-lsundials_idas",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "-lsundials_arkode",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "-lsundials_kinsol",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "-lsundials_nvecserial",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "-lsundials_nvecparallel",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "/usr/local/lib/libsymengine.so.0.8.1",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "-lflint",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "-lmpc",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "-lmpfr",
+				"role" : "libraries"
+			},
+			{
+				"fragment" : "-lgmp",
+				"role" : "libraries"
+			}
+		],
+		"language" : "CXX"
+	},
+	"name" : "muscle",
+	"nameOnDisk" : "muscle",
+	"paths" : 
+	{
+		"build" : ".",
+		"source" : "."
+	},
+	"sourceGroups" : 
+	[
+		{
+			"name" : "Source Files",
+			"sourceIndexes" : 
+			[
+				0
+			]
+		}
+	],
+	"sources" : 
+	[
+		{
+			"backtrace" : 2,
+			"compileGroupIndex" : 0,
+			"path" : "muscle.cc",
+			"sourceGroupIndex" : 0
+		}
+	],
+	"type" : "EXECUTABLE"
+}
